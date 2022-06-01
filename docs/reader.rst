@@ -1,7 +1,7 @@
  .. _reader:
 
 *************************************************
-Clean (`xripl.reader`)
+Reader (`xripl.reader`)
 *************************************************
 
 .. automodapi:: xripl.reader

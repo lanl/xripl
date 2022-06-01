@@ -1,7 +1,7 @@
  .. _segmentation:
 
 *************************************************
-Clean (`xripl.segmentation`)
+Segmentation (`xripl.segmentation`)
 *************************************************
 
 .. automodapi:: xripl.segmentation

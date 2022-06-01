@@ -1,7 +1,7 @@
  .. _filters:
 
 *************************************************
-Clean (`xripl.filters`)
+Filters (`xripl.filters`)
 *************************************************
 
 .. automodapi:: xripl.filters

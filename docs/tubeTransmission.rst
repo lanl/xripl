@@ -1,7 +1,7 @@
  .. _tubeTransmission:
 
 *************************************************
-Clean (`xripl.tubeTransmission`)
+Tube Transmission (`xripl.tubeTransmission`)
 *************************************************
 
 .. automodapi:: xripl.tubeTransmission

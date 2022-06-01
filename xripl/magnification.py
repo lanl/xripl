@@ -28,6 +28,8 @@ def lineoutMinima(lineoutX,
     filter, and finds the 2 deepest minima in the lineout. These minima
     should correspond to the inner diameter edge of the target tube.
     
+    Parameters
+    ----------
     lineoutX : numpy.ndarray
         1D array of x-axis points of the lineout from which we
         want to get minima.
@@ -118,6 +120,8 @@ def tubeCenterPx(minimaIdxs, lineoutY=None, plotsFlag=False):
     Given the pixel positions of the tube edges, obtains the tube center
     in pixels for a tube target.
     
+    Parameters
+    ----------
     minimaIdxs : tuple
         A tuple of ints corresponding to the pixel positions of the
         two minima in intensity found in the radiograph by lineoutMinima().
@@ -160,6 +164,8 @@ def diameterPx(minimaIdxs):
     Obtains the diameter of the tube in pixels when given the tube
     edges. Tube edges are obtained using lineoutMinima().
     
+    Parameters
+    ----------
     minimaIdxs : tuple
         A tuple of ints corresponding to the pixel positions of the
         two minima in intensity found in the radiograph by lineoutMinima().
@@ -187,6 +193,8 @@ def magnificationUmPx(innerDiameterPx,
     target tube diameter in um, in px, and standard deviation on the
     diameter in px.
     
+    Parameters
+    ----------
     innerDiameterPx : float
         Measured inner diameter of the target tube in pixels.
         
@@ -240,6 +248,8 @@ def magnificationAnalysis(shot,
     Get magnification from target radiograph by measuring
     inner tube wall of known diameter.
     
+    Parameters
+    ----------
     shot : int
         Shot number to read raw radiographic iamge data from.
         

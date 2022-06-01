@@ -1,7 +1,7 @@
  .. _contour:
 
 *************************************************
-Clean (`xripl.contour`)
+Contour (`xripl.contour`)
 *************************************************
 
 .. automodapi:: xripl.contour

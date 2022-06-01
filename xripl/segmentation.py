@@ -28,6 +28,18 @@ def merge_labels(labels_image,
                  label_after_merge):
     r"""
     Utility function for merging different labeled regions.
+    
+    Parameters
+    ----------
+    labels_image : numpy.ndarray
+        Labeled image.
+        
+    labels_to_merge : numpy.ndarray
+        Array of label indices of labels to be merged.
+        
+    label_after_merge : int
+        Label index used to overwrite labels in labels_to_merge.
+    
     """
     labels_map = np.arange(np.max(labels_image) + 1)
     labels_map[labels_to_merge] = label_after_merge
@@ -38,6 +50,8 @@ def nSegments(labels, n):
     r"""
     Get the n largest area segments from a segmented (labeled) image.
     
+    Parameters
+    ----------
     labels: numpy.ndarray
         A segmented 2D image.
         
@@ -64,6 +78,8 @@ def segmentContour(labels, segmentNumber, plots=False):
     Given a segmented image and a selected segment number, obtains the
     longest contour of that segment.
     
+    Parameters
+    ----------
     labels: numpy.ndarray
         A segmented 2D image.
         
@@ -115,6 +131,9 @@ def detectShock(image,
             via watershed.
         5th The gradient image in step 4 and the markers from step 3 are
             processed using watershed segmentation.
+    
+    Parameters
+    ----------
     
     image: numpy.ndarray
         Image to be processed for shock detection.

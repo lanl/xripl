@@ -1,7 +1,7 @@
  .. _contrast:
 
 *************************************************
-Clean (`xripl.contrast`)
+Contrast (`xripl.contrast`)
 *************************************************
 
 .. automodapi:: xripl.contrast

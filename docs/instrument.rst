@@ -1,7 +1,7 @@
  .. _instrument:
 
 *************************************************
-Clean (`xripl.instrument`)
+Instrument (`xripl.instrument`)
 *************************************************
 
 .. automodapi:: xripl.instrument
