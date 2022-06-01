@@ -9,3 +9,6 @@ tests for clean.py
 
 import pytest
 import xripl.clean
+
+def test_answer():
+    assert 5 == 5
