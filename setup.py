@@ -19,7 +19,7 @@ with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
     long_description = f.read()
 
 setup(name='xripl',
-      version='0.1',
+      version='0.2.0',
       description='X-Ray Radiographic Image Processing Library',
       long_description=long_description,
       long_description_content_type='text/markdown',
