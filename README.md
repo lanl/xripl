@@ -1,6 +1,6 @@
 # XRIPL
 
-XRIPL: X-Ray Radiographic Image Processing Library
+XRIPL (C22023): X-Ray Radiographic Image Processing Library
 Pawel M. Kozlowski 2018-10-19
 
 
@@ -18,14 +18,14 @@ data sets from high temperature plasma experiments. Review of Scientific
 Instruments 92, 033532 (2021) https://doi.org/10.1063/5.0040285
 
 ## Installation
-Detailed installation instructions can be found [here]()
+Detailed installation instructions can be found [here]().
 
 ## License
 XRIPL is released under a [3-clause BSD license]().
 
 ## Citing XRIPL
 If you use XRIPL in your work, please follow the best practices for citing
-XRIPL which can be found [here]()
+XRIPL which can be found [here]().
 
 ## Acknowledgements
 Development of Fiducia was supported by the U.S. Department of Energy, and
