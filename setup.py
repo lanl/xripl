@@ -16,6 +16,6 @@ setup(name='xripl',
       url='https://github.com/lanl/xripl',
       author='Pawel Marek Kozlowski',
       author_email='pkozlowski@lanl.gov',
-      license='LANL',
+      license='BSD',
       packages=['xripl'],
       zip_safe=False)
