@@ -8,4 +8,4 @@ tests for contour.py
 """
 
 import pytest
-import ..contour
+import xripl.contour

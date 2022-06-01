@@ -8,4 +8,4 @@ tests for contrast.py
 """
 
 import pytest
-import ..contrast
+import xripl.contrast

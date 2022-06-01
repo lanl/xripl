@@ -8,4 +8,4 @@ tests for visualizations.py
 """
 
 import pytest
-import ..visualizations
+import xripl.visualizations

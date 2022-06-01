@@ -8,4 +8,4 @@ tests for films.py
 """
 
 import pytest
-import ..films
+import xripl.films

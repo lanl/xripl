@@ -8,4 +8,4 @@ tests for reader.py
 """
 
 import pytest
-import ..reader
+import xripl.reader

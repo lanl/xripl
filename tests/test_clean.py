@@ -8,4 +8,4 @@ tests for clean.py
 """
 
 import pytest
-import ..clean
+import xripl.clean

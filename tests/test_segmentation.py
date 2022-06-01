@@ -8,4 +8,4 @@ tests for segmentation.py
 """
 
 import pytest
-import ..segmentation
+import xripl.segmentation

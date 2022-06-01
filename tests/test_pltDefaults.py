@@ -8,4 +8,4 @@ tests for pltDefaults.py
 """
 
 import pytest
-import ..pltDefaults
+import xripl.pltDefaults

@@ -8,4 +8,4 @@ tests for magnification.py
 """
 
 import pytest
-import ..magnification
+import xripl.magnification

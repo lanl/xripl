@@ -8,4 +8,4 @@ tests for instrument.py
 """
 
 import pytest
-import ..instrument
+import xripl.instrument

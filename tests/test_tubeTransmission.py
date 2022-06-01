@@ -8,4 +8,4 @@ tests for tubeTransmission.py
 """
 
 import pytest
-import ..tubeTransmission
+import xripl.tubeTransmission

@@ -8,4 +8,4 @@ tests for filters.py
 """
 
 import pytest
-import ..filters
+import xripl.filters
