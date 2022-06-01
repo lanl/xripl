@@ -22,7 +22,7 @@ setup(name='xripl',
                    'Development Status :: 3 - Alpha',
                    'Operating System :: OS Independent',
                    'Programming Language :: Python :: 3',
-                   'Topic :: Scientific/Engineering :: Physics'
+                   'Topic :: Scientific/Engineering :: Physics',
                    'Topic :: Scientific/Engineering :: Image Processing',
                    'Natural Language :: English'],
       packages=['xripl'],
