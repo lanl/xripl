@@ -21,6 +21,12 @@ from skimage import filters
 import xripl.pltDefaults
 
 
+# listing all functions declared in this file so that sphinx-automodapi
+# correctly documents them and doesn't document imported functions.
+__all__ = ["openSyntheticRadiograph",
+           "saveHdf",
+           ]
+
 
 #%% functions
 def openSyntheticRadiograph(directory, fileName, plot=False):

@@ -13,6 +13,17 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 
+# listing all functions declared in this file so that sphinx-automodapi
+# correctly documents them and doesn't document imported functions.
+__all__ = ["spatialConversion",
+           "overlayTube",
+           "cropImgCalibrated",
+           "rotateImgCalibrated",
+           "lineoutsComparison1",
+           "lineoutsComparison2",
+           ]
+
+
 def spatialConversion(img, px2Um, pxRef, umRef, method='vertical'):
     r"""
     Generates spatial extents of image in micrometers, by using

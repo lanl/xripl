@@ -18,6 +18,14 @@ import matplotlib.pyplot as plt
 import xripl.pltDefaults
 
 
+# listing all functions declared in this file so that sphinx-automodapi
+# correctly documents them and doesn't document imported functions.
+__all__ = ["cleanArtifacts",
+           "flatten",
+           "enhanceRadiograph",
+           ]
+
+
 def cleanArtifacts(image,
                    diskSize=5,
                    plots=False,

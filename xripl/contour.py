@@ -11,6 +11,12 @@ Tools for identifying contours of equal intensity/contrast.
 import numpy as np
 
 
+# listing all functions declared in this file so that sphinx-automodapi
+# correctly documents them and doesn't document imported functions.
+__all__ = ["nContours",
+           ]
+
+
 def nContours(contours, n):
     """
     Get the n longest contours from a list of contours.

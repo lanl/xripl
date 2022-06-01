@@ -18,6 +18,14 @@ import matplotlib.pyplot as plt
 import xripl.pltDefaults
 
 
+# listing all functions declared in this file so that sphinx-automodapi
+# correctly documents them and doesn't document imported functions.
+__all__ = ["openRadiograph",
+           "omegaDataSearch",
+           "shotRadiograph",
+           ]
+
+
 def openRadiograph(fileName):
     """
     Given the full filename (with path) to an hdf5 file containing

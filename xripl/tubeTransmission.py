@@ -19,6 +19,17 @@ import scipy.signal as sig
 import xripl.pltDefaults
 
 
+# listing all functions declared in this file so that sphinx-automodapi
+# correctly documents them and doesn't document imported functions.
+__all__ = ["chord",
+           "tubeThickness",
+           "transmission",
+           "tubeTransmission",
+           "plotTubeTransmission",
+           "gaussianBlur",
+           ]
+
+
 def chord(radius, height):
     r"""
     Calculates the horizontal chord length through a circle at a given
