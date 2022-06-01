@@ -12,7 +12,8 @@ Image segmentation tools for radiographic images.
 import numpy as np
 from scipy import ndimage as ndi
 from skimage import measure
-from skimage.morphology import watershed, disk
+from skimage.morphology import disk
+from skimage.segmentation import watershed
 from skimage.filters import median, rank
 from skimage.filters.rank import maximum, minimum
 import matplotlib.pyplot as plt
