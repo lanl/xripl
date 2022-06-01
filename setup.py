@@ -10,6 +10,14 @@ XRIPL setup script.
 
 from setuptools import setup
 
+# Read the contents of the README file to include in the long
+# description. The long description then becomes part of the pypi.org
+# page.
+from os import path
+this_directory = path.abspath(path.dirname(__file__))
+with open(path.join(this_directory, 'README.md'), encoding='utf-8') as f:
+    long_description = f.read()
+
 setup(name='xripl',
       version='0.1',
       description='X-Ray Radiographic Image Processing Library',
