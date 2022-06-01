@@ -12,7 +12,8 @@ Image segmentation tools for radiographic images.
 import numpy as np
 from scipy import ndimage as ndi
 from skimage import measure
-from skimage.morphology import watershed, disk
+from skimage.morphology import disk
+from skimage.segmentation import watershed
 from skimage.filters import median, rank
 from skimage.filters.rank import maximum, minimum
 import matplotlib.pyplot as plt
@@ -34,7 +35,7 @@ def merge_labels(labels_image,
 
 
 def nSegments(labels, n):
-    """
+    r"""
     Get the n largest area segments from a segmented (labeled) image.
     
     labels: numpy.ndarray
@@ -59,7 +60,7 @@ def nSegments(labels, n):
 
 
 def segmentContour(labels, segmentNumber, plots=False):
-    """
+    r"""
     Given a segmented image and a selected segment number, obtains the
     longest contour of that segment.
     
@@ -98,7 +99,7 @@ def detectShock(image,
                 compactness=0,
                 plots=True,
                 nSegs=3):
-    """
+    r"""
     This is a convenience function for applying watershed segmentation using
     regions of low gradient as markers, and using another gradient image
     for processing via watershed.
@@ -151,6 +152,7 @@ def detectShock(image,
         
     nSegs: int
         Obtains contours of the largest segments by filled area.
+    
     """
     if not type(originalImage) == np.ndarray:
         originalImage = image
