@@ -13,6 +13,8 @@ from setuptools import setup
 setup(name='xripl',
       version='0.1',
       description='X-Ray Radiographic Image Processing Library',
+      long_description=long_description,
+      long_description_content_type='text/markdown',
       url='https://github.com/lanl/xripl',
       author='Pawel Marek Kozlowski',
       author_email='pkozlowski@lanl.gov',
