@@ -14,6 +14,14 @@ import matplotlib
 import matplotlib.pyplot as plt
 from itertools import cycle
 
+
+# listing all functions declared in this file so that sphinx-automodapi
+# correctly documents them and doesn't document imported functions.
+__all__ = ["plot_line_shaded",
+           "plot_scatter_bars",
+           ]
+
+
 # setting default plot properties
 plotFont = {'family' : 'serif',
             'weight' : 'normal',

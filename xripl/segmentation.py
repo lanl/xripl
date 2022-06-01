@@ -23,6 +23,15 @@ from xripl.contour import nContours
 import xripl.pltDefaults
 
 
+# listing all functions declared in this file so that sphinx-automodapi
+# correctly documents them and doesn't document imported functions.
+__all__ = ["merge_labels",
+           "nSegments",
+           "segmentContour",
+           "detectShock",
+           ]
+
+
 def merge_labels(labels_image,
                  labels_to_merge,
                  label_after_merge):
@@ -121,20 +130,19 @@ def detectShock(image,
     for processing via watershed.
     
     Steps:
-        1st the image is denoised using a median filter
-        2nd the gradient of the image is obtained and thresholded to generate
-            markers to be used for watershed segmentation.
-        3rd Morphological closing operation is applied to markers to make
-            the region boundaries thicker and the marker regions more
-            continous.
-        4th Another gradient image is generated, which will be processed
-            via watershed.
-        5th The gradient image in step 4 and the markers from step 3 are
-            processed using watershed segmentation.
+    1st the image is denoised using a median filter
+    2nd the gradient of the image is obtained and thresholded to generate
+    markers to be used for watershed segmentation.
+    3rd Morphological closing operation is applied to markers to make
+    the region boundaries thicker and the marker regions more
+    continous.
+    4th Another gradient image is generated, which will be processed
+    via watershed.
+    5th The gradient image in step 4 and the markers from step 3 are
+    processed using watershed segmentation.
     
     Parameters
     ----------
-    
     image: numpy.ndarray
         Image to be processed for shock detection.
         
@@ -171,7 +179,6 @@ def detectShock(image,
         
     nSegs: int
         Obtains contours of the largest segments by filled area.
-    
     """
     if not type(originalImage) == np.ndarray:
         originalImage = image

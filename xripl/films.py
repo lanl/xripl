@@ -12,6 +12,11 @@ Opening and processing microD scanned films.
 import h5py as h5
 
 
+# listing all functions declared in this file so that sphinx-automodapi
+# correctly documents them and doesn't document imported functions.
+__all__ = ["openFilm",
+           ]
+
 #%% functions
 
 def openFilm(fileName):

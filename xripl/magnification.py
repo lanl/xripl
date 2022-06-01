@@ -16,6 +16,16 @@ from xripl.clean import enhanceRadiograph
 from xripl.visualizations import cropImgCalibrated, rotateImgCalibrated
 
 
+# listing all functions declared in this file so that sphinx-automodapi
+# correctly documents them and doesn't document imported functions.
+__all__ = ["lineoutMinima",
+           "tubeCenterPx",
+           "diameterPx",
+           "magnificationUmPx",
+           "magnificationAnalysis",
+           ]
+
+
 def lineoutMinima(lineoutX,
                   lineoutY,
                   window_length=51,

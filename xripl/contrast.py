@@ -18,7 +18,10 @@ from skimage import exposure
 # custom modules
 import xripl.pltDefaults
 
-
+# listing all functions declared in this file so that sphinx-automodapi
+# correctly documents them and doesn't document imported functions.
+__all__ = ["equalize",
+           ]
 
 #%% global and CLAHE contrast equalization
 

@@ -11,6 +11,14 @@ Custom filters for cleaning/blurring images.
 import numpy as np
 from scipy import ndimage
 
+
+# listing all functions declared in this file so that sphinx-automodapi
+# correctly documents them and doesn't document imported functions.
+__all__ = ["boxFilter",
+           ]
+
+
+
 def boxFilter(img, boxSize=2):
     """
     Applies a symmetric box filter to blur the image. A box filter
