@@ -24,11 +24,13 @@ def cleanArtifacts(image,
                    vmin=0,
                    vmax=1,
                    flip=False):
-    """
+    r"""
     Applies morphological opening to clean bright streaks and spots from
     radiographs, and then applies a morphological closing to remove dark
     artifacts.
     
+    Parameters
+    ----------
     image: numpy.ndarray
         Image containing artifacts to be cleaned.
         
@@ -89,11 +91,13 @@ def cleanArtifacts(image,
 
 
 def flatten(image, medianDisk=100, gaussSize=100, plots=False, vmin=0, vmax=1):
-    """
+    r"""
     Produces an approximate image of the background light intensity
     variations in the image and divides the image by this background to
     effectively flatten the contrast.
     
+    Parameters
+    ----------
     image: numpy.ndarray
         Image whose background brightness variation is to be removed via
         flattening.
@@ -160,6 +164,8 @@ def enhanceRadiograph(img,
     Median filter, morphological filter, and pseudo-flatfield the
     radiographs to prepare it for feature identification.
     
+    Parameters
+    ----------
     img : numpy.ndarray
         Foreground radiographic image as a 2D numpy array, which is
         to be cleaned/enhanced.
