@@ -1,7 +1,7 @@
  .. _visualizations:
 
 *************************************************
-Clean (`xripl.visualizations`)
+Visualizations (`xripl.visualizations`)
 *************************************************
 
 .. automodapi:: xripl.visualizations

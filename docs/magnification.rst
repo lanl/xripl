@@ -1,7 +1,7 @@
  .. _magnification:
 
 *************************************************
-Clean (`xripl.magnification`)
+Magnification (`xripl.magnification`)
 *************************************************
 
 .. automodapi:: xripl.magnification
